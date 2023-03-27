@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/Portfolio/static/js/main.c526ab35.js",
+    "static/js/787.fffb673f.chunk.js": "/Portfolio/static/js/787.fffb673f.chunk.js",
+    "static/media/entrance-1.jpg": "/Portfolio/static/media/entrance-1.f4f828b03a44f59aa747.jpg",
+    "static/media/kitchen-1.jpg": "/Portfolio/static/media/kitchen-1.263bf80e9dae1e17fe1e.jpg",
+    "static/media/kitchenDiner-2.jpg": "/Portfolio/static/media/kitchenDiner-2.792731f3da816cf6da9b.jpg",
+    "static/media/salon-1.jpg": "/Portfolio/static/media/salon-1.79a3bb74dd0e6b8547ca.jpg",
+    "static/media/salon-3.jpg": "/Portfolio/static/media/salon-3.e86f92cdd4b3e8830071.jpg",
+    "static/media/kitchenDiner-1.jpg": "/Portfolio/static/media/kitchenDiner-1.f823dfc85ba4bbdae2d2.jpg",
+    "static/media/salon-2.jpg": "/Portfolio/static/media/salon-2.4a78275391c85b4d1331.jpg",
+    "static/media/livingRoom-1.jpg": "/Portfolio/static/media/livingRoom-1.ceb877479a44d0ba280c.jpg",
+    "static/media/livingRoom-2.jpg": "/Portfolio/static/media/livingRoom-2.c894cff4de3a0d587f35.jpg",
+    "static/media/livingRoom-3.jpg": "/Portfolio/static/media/livingRoom-3.c894cff4de3a0d587f35.jpg",
+    "static/media/bigToilet-1.jpg": "/Portfolio/static/media/bigToilet-1.d215484a061503ca593a.jpg",
+    "static/media/toilet-1.jpg": "/Portfolio/static/media/toilet-1.bea7cd6da7fb0bfc0f4e.jpg",
+    "static/media/sauna-inside.jpg": "/Portfolio/static/media/sauna-inside.b81756939e17c6859ad9.jpg",
+    "static/media/sauna-far.jpg": "/Portfolio/static/media/sauna-far.65d2c66d10b9d7bcf856.jpg",
+    "static/media/logo.png": "/Portfolio/static/media/logo.fefdc9d965c840108ea8.png",
+    "index.html": "/Portfolio/index.html",
+    "main.e6c13ad2.css.map": "/Portfolio/static/css/main.e6c13ad2.css.map",
+    "main.c526ab35.js.map": "/Portfolio/static/js/main.c526ab35.js.map",
+    "787.fffb673f.chunk.js.map": "/Portfolio/static/js/787.fffb673f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c526ab35.js"
+  ]
+}
