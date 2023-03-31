@@ -37,7 +37,6 @@ const NavBar = () => {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
           >
             {/* <Menu /> */}
             <img src={Logo} alt="CompanyLogo" />
@@ -46,7 +45,11 @@ const NavBar = () => {
           <Button
             variant="outlined"
             color="inherit"
-            sx={{ borderRadius: 5, "&:hover": { color: "gold" } }}
+            sx={{
+              borderRadius: 5,
+              "&:hover": { color: "gold" },
+              fontSize: { xs: "0.55rem", sm: " 0.875rem" },
+            }}
           >
             Contact Us
           </Button>

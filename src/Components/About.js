@@ -7,10 +7,20 @@ const About = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 8 }}>
       <Box>
-        <Typography variant="h2" color="white" fontWeight="bold" mb={2}>
+        <Typography
+          variant="h2"
+          color="white"
+          fontWeight="bold"
+          mb={2}
+          sx={{ fontSize: { xs: "2.75rem", sm: "3.75rem" } }}
+        >
           About this Villa
         </Typography>
-        <Typography color="white" variant="h5">
+        <Typography
+          color="white"
+          variant="h5"
+          sx={{ fontSize: { xs: "1rem", sm: "1.5rem" } }}
+        >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -25,7 +35,13 @@ const About = () => {
       {/* End Of About */}
 
       <Box>
-        <Typography variant="h2" color="white" fontWeight="bold" mb={2}>
+        <Typography
+          variant="h2"
+          color="white"
+          fontWeight="bold"
+          mb={2}
+          sx={{ fontSize: { xs: "2.75rem", sm: "3.75rem" } }}
+        >
           Property Details
         </Typography>
         <Stack display="flex" direction="row">
@@ -38,6 +54,7 @@ const About = () => {
                   variant="h5"
                   mb={2}
                   display="list-item"
+                  sx={{ fontSize: { xs: "0.7rem", sm: "1.5rem" } }}
                 >
                   {det}
                 </Typography>
@@ -48,7 +65,10 @@ const About = () => {
           <Box
             id="Photo Preview"
             sx={{
-              height: "800px",
+              height: {
+                xs: "600px",
+                sm: "800px",
+              },
               width: "50%",
               overflow: "auto",
               display: "flex",
@@ -63,8 +83,14 @@ const About = () => {
                 <Box
                   key={photo}
                   sx={{
-                    width: 350,
-                    height: 350,
+                    width: {
+                      xs: 200,
+                      sm: 350,
+                    },
+                    height: {
+                      xs: 200,
+                      sm: 350,
+                    },
                     img: {
                       width: "100%",
                       height: "100%",
