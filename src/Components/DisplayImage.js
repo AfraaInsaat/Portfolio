@@ -54,7 +54,7 @@ const DisplayImage = () => {
           display="flex"
           flexDirection="column"
           justifyContent="space-between"
-          spacing={3}
+          // spacing={3}
           height="100%"
         >
           <Box
@@ -74,7 +74,7 @@ const DisplayImage = () => {
                   sm: "850px",
                 },
               },
-              gap: 2,
+              gap: 1,
             }}
           >
             <IconButton
