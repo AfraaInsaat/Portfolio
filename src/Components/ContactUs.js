@@ -3,13 +3,13 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <Box>
+    <Box id="contactUs">
       <Typography
         variant="h2"
         color="white"
         fontWeight="bold"
         mb={2}
-        sx={{ fontSize: { xs: "2.75rem", sm: "3.75rem" } }}
+        sx={{ fontSize: { xs: "2.75rem", sm: "3.75rem" }, color: "gold" }}
       >
         Contact Us
       </Typography>
@@ -18,8 +18,8 @@ const ContactUs = () => {
         variant="h5"
         sx={{ fontSize: { xs: "1rem", sm: "1.5rem" } }}
       >
-        We have a multinational team of experts waiting for you. call us on +90
-        535 518 49 04
+        We have a multinational team of experts waiting for you. Call us on +90
+        535 518 49 04.
       </Typography>
     </Box>
   );

@@ -37,6 +37,11 @@ const NavBar = () => {
             edge="start"
             color="inherit"
             aria-label="menu"
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/afrainsaat/?igshid=YmMyMTA2M2Y%3D"
+              )
+            }
           >
             {/* <Menu /> */}
             <img src={Logo} alt="CompanyLogo" />
@@ -50,6 +55,11 @@ const NavBar = () => {
               "&:hover": { color: "gold" },
               fontSize: { xs: "0.55rem", sm: " 0.875rem" },
             }}
+            onClick={() =>
+              document
+                .getElementById("contactUs")
+                .scrollIntoView({ behavior: "smooth" })
+            }
           >
             Contact Us
           </Button>

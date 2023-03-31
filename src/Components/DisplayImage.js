@@ -31,13 +31,14 @@ const DisplayImage = () => {
         <IconButton
           sx={{
             position: "absolute",
-            top: { xs: 40, sm: 50 },
+            top: { xs: 40, sm: 25 },
             right: { xs: "5%", sm: "25%" },
             backgroundColor: "white",
             padding: { xs: "3px", sm: 1 },
-            svg: { fontSize: { xs: "0.95rem", sm: "1.5rem" } },
+            svg: { fontSize: { xs: "0.95rem", sm: "1.5rem" }, color: "black" },
             "&:hover": {
               backgroundColor: "white",
+              transform: "scale(0.9)",
             },
             "&:active": {
               transform: "scale(0.9)",
@@ -82,7 +83,10 @@ const DisplayImage = () => {
                 backgroundColor: "white",
                 // fontSize: "1rem",
                 padding: { xs: "3px", sm: 1 },
-                svg: { fontSize: { xs: "0.95rem", sm: "1.5rem" } },
+                svg: {
+                  fontSize: { xs: "0.95rem", sm: "1.5rem" },
+                  color: "black",
+                },
                 "&:hover": { backgroundColor: "white" },
                 "&:active": {
                   transform: "scale(0.9)",
@@ -107,7 +111,10 @@ const DisplayImage = () => {
                 backgroundColor: "white",
                 // fontSize: "1rem",
                 padding: { xs: "3px", sm: 1 },
-                svg: { fontSize: { xs: "0.95rem", sm: "1.5rem" } },
+                svg: {
+                  fontSize: { xs: "0.95rem", sm: "1.5rem" },
+                  color: "black",
+                },
                 "&:hover": { backgroundColor: "white" },
                 "&:active": {
                   transform: "scale(0.9)",
