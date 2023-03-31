@@ -54,7 +54,7 @@ const DisplayImage = () => {
           display="flex"
           flexDirection="column"
           justifyContent="space-between"
-          // spacing={3}
+          spacing={3}
           height="100%"
         >
           <Box
@@ -67,7 +67,7 @@ const DisplayImage = () => {
               img: {
                 height: {
                   xs: "300px",
-                  sm: "650px",
+                  sm: "550px",
                 },
                 width: {
                   xs: "300px",

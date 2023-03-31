@@ -76,6 +76,7 @@ const About = () => {
               justifyContent: "center",
               gap: 2,
               flexWrap: "wrap",
+              "&::-webkit-scrollbar": { display: "none" },
             }}
           >
             {photoArray.map((photo, index) => {

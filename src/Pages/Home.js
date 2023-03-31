@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import { photoArray } from "../Data";
 import About from "../Components/About";
 import DisplayImage from "../Components/DisplayImage";
+import ContactUs from "../Components/ContactUs";
 const Home = () => {
   const [videoLoad, setVideoLoad] = React.useState(false);
 
@@ -42,6 +43,7 @@ const Home = () => {
 
       <About />
       <DisplayImage />
+      <ContactUs />
     </Box>
   );
 };
