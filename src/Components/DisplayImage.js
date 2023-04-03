@@ -1,4 +1,4 @@
-import { Box, Stack, IconButton, Fade } from "@mui/material";
+import { Box, Stack, IconButton, Fade, Typography } from "@mui/material";
 import { ArrowForward, ArrowBack, Close } from "@mui/icons-material";
 import React from "react";
 import { photoArray } from "../Data";
@@ -33,7 +33,7 @@ const DisplayImage = () => {
           sx={{
             position: "absolute",
             top: { xs: 40, sm: 25 },
-            right: { xs: "5%", sm: "25%" },
+            right: { xs: "5%", sm: "10%", md: "25%" },
             backgroundColor: "white",
             padding: { xs: "3px", sm: 1 },
             svg: { fontSize: { xs: "0.95rem", sm: "1.5rem" }, color: "black" },
@@ -73,6 +73,7 @@ const DisplayImage = () => {
                 },
                 width: {
                   xs: "300px",
+                  sm: "450px",
                   md: "850px",
                 },
               },
@@ -106,10 +107,21 @@ const DisplayImage = () => {
               //  fontSize="large"
               />
             </IconButton>
-            <Box>
+            <Box sx={{ position: "relative" }}>
               {dpImage !== "OFF" && (
                 <img src={photoArray[dpImage]} alt={photoArray[dpImage]} />
               )}
+              <Typography
+                sx={{
+                  color: "red",
+                  display: { xs: "none", sm: "block", md: "none" },
+                  position: "absolute",
+                  bottom: 0,
+                  right: 0,
+                }}
+              >
+                {dpImage !== "OFF" && dpImage + 1}/{photoArray.length}
+              </Typography>
             </Box>
             <IconButton
               sx={{
