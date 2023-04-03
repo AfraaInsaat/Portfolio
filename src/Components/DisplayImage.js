@@ -1,4 +1,4 @@
-import { Box, Stack, IconButton, Fade } from "@mui/material";
+import { Box, Stack, IconButton, Fade, Typography } from "@mui/material";
 import { ArrowForward, ArrowBack, Close } from "@mui/icons-material";
 import React from "react";
 import { photoArray } from "../Data";
@@ -68,11 +68,11 @@ const DisplayImage = () => {
               img: {
                 height: {
                   xs: "300px",
-                  sm: "550px",
+                  lg: "550px",
                 },
                 width: {
                   xs: "300px",
-                  sm: "850px",
+                  lg: "850px",
                 },
               },
               gap: 1,
@@ -103,9 +103,23 @@ const DisplayImage = () => {
               //  fontSize="large"
               />
             </IconButton>
-            {dpImage !== "OFF" && (
-              <img src={photoArray[dpImage]} alt={photoArray[dpImage]} />
-            )}
+            <Box sx={{ position: "relative", top: { xs: -10 } }}>
+              {dpImage !== "OFF" && (
+                <img src={photoArray[dpImage]} alt={photoArray[dpImage]} />
+              )}
+              <Typography
+                sx={{
+                  color: "red",
+                  fontSize: "1rem",
+                  display: { xs: "none", sm: "block", lg: "none" },
+                  position: "absolute",
+                  bottom: 0,
+                  right: 0,
+                }}
+              >
+                {dpImage && dpImage}/{photoArray.length - 1}
+              </Typography>
+            </Box>
             <IconButton
               sx={{
                 backgroundColor: "white",
@@ -135,6 +149,8 @@ const DisplayImage = () => {
           <Stack
             display="flex"
             direction="row"
+            alignItems="center"
+            justifyContent="space-between"
             spacing={2}
             sx={{ overflowX: "auto" }}
           >
@@ -143,10 +159,11 @@ const DisplayImage = () => {
                 <Box
                   key={index}
                   sx={{
-                    height: { xs: 175, sm: 200 },
+                    // height: { xs: 175, sm: 200 },
                     width: { xs: 200, sm: 250 },
+                    height: "100%",
                     img: {
-                      height: "100%",
+                      // height: { xs: 200, sm: "100%" },
                       width: { xs: 200, sm: 250 },
                       cursor: "pointer",
                       "&:hover": {
