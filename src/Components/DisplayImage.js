@@ -1,4 +1,4 @@
-import { Box, Stack, IconButton, Fade, Typography } from "@mui/material";
+import { Box, Stack, IconButton, Fade } from "@mui/material";
 import { ArrowForward, ArrowBack, Close } from "@mui/icons-material";
 import React from "react";
 import { photoArray } from "../Data";
@@ -24,7 +24,8 @@ const DisplayImage = () => {
           bottom: 0,
           zIndex: 9,
           pt: 10,
-          pb: 10,
+          pb: { xs: 10, sm: 39, md: 10 },
+
           // display: dpImage === "OFF" && "none",
         }}
       >
@@ -32,7 +33,7 @@ const DisplayImage = () => {
           sx={{
             position: "absolute",
             top: { xs: 40, sm: 25 },
-            right: { xs: "5%", sm: "20%", md: "25%" },
+            right: { xs: "5%", sm: "25%" },
             backgroundColor: "white",
             padding: { xs: "3px", sm: 1 },
             svg: { fontSize: { xs: "0.95rem", sm: "1.5rem" }, color: "black" },
@@ -65,17 +66,19 @@ const DisplayImage = () => {
               justifyContent: "center",
               alignItems: "center",
               objectFit: "cover",
-              // img: {
-              //   height: {
-              //     xs: "300px",
-              //     lg: "550px",
-              //   },
-              //   width: {
-              //     xs: "300px",
-              //     lg: "850px",
-              //   },
-              // },
+              img: {
+                height: {
+                  xs: "300px",
+                  md: "550px",
+                },
+                width: {
+                  xs: "300px",
+                  md: "850px",
+                },
+              },
               gap: 1,
+              position: "relative",
+              bottom: { xs: 0, sm: 25, md: 0 },
             }}
           >
             <IconButton
@@ -103,39 +106,10 @@ const DisplayImage = () => {
               //  fontSize="large"
               />
             </IconButton>
-            <Box
-              sx={{
-                position: "relative",
-                top: { xs: -30, md: 0 },
-                img: {
-                  height: {
-                    xs: "300px",
-
-                    lg: "550px",
-                  },
-                  width: {
-                    xs: "300px",
-                    sm: "400px",
-                    lg: "850px",
-                  },
-                },
-              }}
-            >
+            <Box>
               {dpImage !== "OFF" && (
                 <img src={photoArray[dpImage]} alt={photoArray[dpImage]} />
               )}
-              <Typography
-                sx={{
-                  color: "red",
-                  fontSize: "1rem",
-                  display: { xs: "none", sm: "block", lg: "none" },
-                  position: "absolute",
-                  bottom: 0,
-                  right: 0,
-                }}
-              >
-                {dpImage && dpImage}/{photoArray.length - 1}
-              </Typography>
             </Box>
             <IconButton
               sx={{
@@ -164,15 +138,12 @@ const DisplayImage = () => {
           {/* End of Main DP */}
           <Box sx={{ display: { sm: "none" }, height: "25%" }}></Box>
           <Stack
-            sx={{
-              display: { xs: "flex", sm: "none", md: "flex" },
-              overflowX: "auto",
-            }}
-            // display="flex"
+            display="flex"
             direction="row"
             alignItems="center"
             justifyContent="space-between"
             spacing={2}
+            sx={{ overflowX: "auto" }}
           >
             {photoArray.map((photo, index) => {
               return (
