@@ -32,7 +32,7 @@ const DisplayImage = () => {
           sx={{
             position: "absolute",
             top: { xs: 40, sm: 25 },
-            right: { xs: "5%", sm: "25%" },
+            right: { xs: "5%", sm: "20%", md: "25%" },
             backgroundColor: "white",
             padding: { xs: "3px", sm: 1 },
             svg: { fontSize: { xs: "0.95rem", sm: "1.5rem" }, color: "black" },
@@ -65,16 +65,16 @@ const DisplayImage = () => {
               justifyContent: "center",
               alignItems: "center",
               objectFit: "cover",
-              img: {
-                height: {
-                  xs: "300px",
-                  lg: "550px",
-                },
-                width: {
-                  xs: "300px",
-                  lg: "850px",
-                },
-              },
+              // img: {
+              //   height: {
+              //     xs: "300px",
+              //     lg: "550px",
+              //   },
+              //   width: {
+              //     xs: "300px",
+              //     lg: "850px",
+              //   },
+              // },
               gap: 1,
             }}
           >
@@ -103,7 +103,24 @@ const DisplayImage = () => {
               //  fontSize="large"
               />
             </IconButton>
-            <Box sx={{ position: "relative", top: { xs: -10 } }}>
+            <Box
+              sx={{
+                position: "relative",
+                top: { xs: -30, md: 0 },
+                img: {
+                  height: {
+                    xs: "300px",
+
+                    lg: "550px",
+                  },
+                  width: {
+                    xs: "300px",
+                    sm: "400px",
+                    lg: "850px",
+                  },
+                },
+              }}
+            >
               {dpImage !== "OFF" && (
                 <img src={photoArray[dpImage]} alt={photoArray[dpImage]} />
               )}
@@ -147,12 +164,15 @@ const DisplayImage = () => {
           {/* End of Main DP */}
           <Box sx={{ display: { sm: "none" }, height: "25%" }}></Box>
           <Stack
-            display="flex"
+            sx={{
+              display: { xs: "flex", sm: "none", md: "flex" },
+              overflowX: "auto",
+            }}
+            // display="flex"
             direction="row"
             alignItems="center"
             justifyContent="space-between"
             spacing={2}
-            sx={{ overflowX: "auto" }}
           >
             {photoArray.map((photo, index) => {
               return (
